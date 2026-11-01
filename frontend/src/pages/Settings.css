@@ -1,0 +1,282 @@
+.settings-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.settings-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+
+.settings-heading h1 {
+  font-size: 30px;
+  color: #25283d;
+  margin: 0 0 8px;
+}
+
+.settings-heading p {
+  color: #9299b0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.settings-save-button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 18px;
+  background: #626ce5;
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.settings-save-button:hover {
+  background: #515bd0;
+}
+
+.settings-card {
+  background: #fff;
+  border: 1px solid #e8eaf2;
+  border-radius: 13px;
+  padding: 25px;
+}
+
+.settings-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 25px;
+}
+
+.settings-card-heading > svg {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #626ce5;
+  background: #eef0ff;
+  flex-shrink: 0;
+}
+
+.settings-card-heading h2 {
+  font-size: 17px;
+  color: #25283d;
+  margin: 0 0 5px;
+}
+
+.settings-card-heading p {
+  font-size: 13px;
+  color: #9299b0;
+  margin: 0;
+}
+
+.settings-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.settings-form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  color: #525a75;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.settings-form-grid input {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid #e3e5ef;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  color: #25283d;
+  background: #fff;
+}
+
+.settings-form-grid input:focus {
+  border-color: #626ce5;
+}
+
+.settings-form-grid input:disabled {
+  background: #f5f6fb;
+  color: #9299b0;
+  cursor: not-allowed;
+}
+
+.settings-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f1f6;
+  color: #525a75;
+  font-size: 14px;
+}
+
+.settings-toggle-row:last-child {
+  border-bottom: none;
+}
+
+.settings-toggle-row input {
+  width: 18px;
+  height: 18px;
+  accent-color: #626ce5;
+  cursor: pointer;
+}
+
+.settings-theme-options {
+  display: flex;
+  gap: 12px;
+}
+
+.settings-theme-options button {
+  padding: 11px 20px;
+  border: 1px solid #e3e5ef;
+  border-radius: 8px;
+  background: #fff;
+  color: #626a85;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.settings-theme-options button.selected {
+  border-color: #626ce5;
+  background: #eef0ff;
+  color: #626ce5;
+  font-weight: 600;
+}
+
+.settings-note {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #9299b0;
+  margin: 12px 0 0;
+}
+
+.settings-success-message {
+  padding: 13px 16px;
+  background: #eaf8ef;
+  border: 1px solid #c8ebd2;
+  border-radius: 9px;
+  color: #27834b;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .settings-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .settings-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-card {
+    padding: 18px;
+  }
+}
+
+/* =====================================
+   SETTINGS DARK MODE
+===================================== */
+
+.dark-theme .settings-page {
+  color: #e5e7eb;
+}
+
+.dark-theme .settings-heading h1 {
+  color: #f9fafb;
+}
+
+.dark-theme .settings-heading p {
+  color: #9ca3af;
+}
+
+.dark-theme .settings-card {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+.dark-theme .settings-card-heading h2 {
+  color: #f9fafb;
+}
+
+.dark-theme .settings-card-heading p {
+  color: #9ca3af;
+}
+
+.dark-theme .settings-card-heading > svg {
+  color: #a5b4fc;
+  background: #373b63;
+}
+
+.dark-theme .settings-form-grid label {
+  color: #d1d5db;
+}
+
+.dark-theme .settings-form-grid input {
+  background: #111827;
+  border-color: #4b5563;
+  color: #f9fafb;
+}
+
+.dark-theme .settings-form-grid input::placeholder {
+  color: #9ca3af;
+}
+
+.dark-theme .settings-form-grid input:disabled {
+  background: #374151;
+  color: #9ca3af;
+}
+
+.dark-theme .settings-toggle-row {
+  color: #d1d5db;
+  border-bottom-color: #374151;
+}
+
+.dark-theme .settings-theme-options button {
+  background: #111827;
+  border-color: #4b5563;
+  color: #d1d5db;
+}
+
+.dark-theme .settings-theme-options button.selected {
+  background: #373b63;
+  border-color: #6366f1;
+  color: #c7d2fe;
+}
+
+.dark-theme .settings-note {
+  color: #9ca3af;
+}
+
+.dark-theme .settings-success-message {
+  background: #064e3b;
+  border-color: #065f46;
+  color: #6ee7b7;
+}
+
+.dark-theme .settings-save-button {
+  background: #4f46e5;
+  color: #fff;
+}
+
+.dark-theme .settings-save-button:hover {
+  background: #6366f1;
+}

@@ -1,0 +1,36 @@
+# Java / Spring Boot
+backend/target/
+*.class
+*.jar
+*.war
+
+# React / Node
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Spring Boot configuration containing credentials
+**/src/main/resources/application.properties
+**/src/main/resources/application-*.properties
+
+# Environment variables
+.env
+.env.*
+!.env.example

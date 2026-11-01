@@ -1,0 +1,391 @@
+.payroll-page {
+  padding: 28px;
+  color: #263247;
+}
+
+.payroll-header,
+.payroll-form-header,
+.payroll-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.payroll-header {
+  margin-bottom: 25px;
+}
+
+.payroll-header h1 {
+  margin: 0 0 7px;
+  font-size: 28px;
+}
+
+.payroll-header p,
+.payroll-table-header p {
+  margin: 0;
+  color: #7b8494;
+  font-size: 14px;
+}
+
+.payroll-add-btn,
+.payroll-save-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 18px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.payroll-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.payroll-stat-card,
+.payroll-form-card,
+.payroll-table-card {
+  background: white;
+  border: 1px solid #e8ebf1;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 3px 12px rgba(30, 41, 59, 0.04);
+}
+
+.payroll-stat-card span {
+  color: #737d8e;
+  font-size: 14px;
+}
+
+.payroll-stat-card h2 {
+  margin: 12px 0 7px;
+  font-size: 25px;
+}
+
+.payroll-stat-card small {
+  color: #929baa;
+}
+
+.payroll-form-card {
+  margin-bottom: 25px;
+}
+
+.payroll-form-header {
+  margin-bottom: 22px;
+}
+
+.payroll-form-header h2,
+.payroll-table-header h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.payroll-form-header button {
+  border: none;
+  background: #f1f3f8;
+  border-radius: 6px;
+  padding: 7px 11px;
+  cursor: pointer;
+}
+
+.payroll-form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.payroll-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.payroll-field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #566174;
+}
+
+.payroll-field input,
+.payroll-field select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px;
+  border: 1px solid #dfe3eb;
+  border-radius: 7px;
+  outline: none;
+  background: white;
+}
+
+.payroll-field input:focus,
+.payroll-field select:focus {
+  border-color: #6366f1;
+}
+
+.payroll-net-preview h3 {
+  margin: 0;
+  color: #16845b;
+  font-size: 22px;
+}
+
+.payroll-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 23px;
+}
+
+.payroll-cancel-btn {
+  background: #f1f3f7;
+  color: #4b5563;
+  border: none;
+  border-radius: 7px;
+  padding: 11px 18px;
+  cursor: pointer;
+}
+
+.payroll-table-card {
+  margin-bottom: 25px;
+}
+
+.payroll-table-header {
+  margin-bottom: 20px;
+}
+
+.payroll-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.payroll-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1100px;
+  font-size: 13px;
+}
+
+.payroll-table th {
+  background: #f7f8fc;
+  color: #657084;
+  font-weight: 600;
+  text-align: left;
+  padding: 14px 12px;
+  white-space: nowrap;
+}
+
+.payroll-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #edf0f4;
+  white-space: nowrap;
+}
+
+.payroll-employee-id {
+  display: block;
+  margin-top: 5px;
+  color: #8992a1;
+}
+
+.payroll-status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.payroll-status.paid {
+  color: #16845b;
+  background: #e5f7ef;
+}
+
+.payroll-status.pending {
+  color: #b7791f;
+  background: #fff4dc;
+}
+
+.payroll-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.payroll-actions button,
+.payroll-status-select {
+  border: none;
+  border-radius: 6px;
+  padding: 7px 9px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.payroll-edit-btn {
+  color: #4338ca;
+  background: #eeedff;
+}
+
+.payroll-delete-btn {
+  color: #dc2626;
+  background: #feecec;
+}
+
+.payroll-status-select {
+  border: 1px solid #e1e5ed;
+  background: white;
+}
+
+.payroll-message {
+  text-align: center;
+  padding: 35px;
+  color: #7b8494;
+}
+
+.payroll-error {
+  background: #feecec;
+  color: #b91c1c;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .payroll-stats,
+  .payroll-form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .payroll-page {
+    padding: 15px;
+  }
+
+  .payroll-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .payroll-stats,
+  .payroll-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =====================================
+   PAYROLL DARK MODE
+===================================== */
+
+.dark-theme .payroll-page {
+  color: #e5e7eb;
+}
+
+.dark-theme .payroll-header h1 {
+  color: #f9fafb;
+}
+
+.dark-theme .payroll-header p,
+.dark-theme .payroll-table-header p {
+  color: #9ca3af;
+}
+
+.dark-theme .payroll-stat-card,
+.dark-theme .payroll-form-card,
+.dark-theme .payroll-table-card {
+  background: #1f2937;
+  border-color: #374151;
+  box-shadow: none;
+}
+
+.dark-theme .payroll-stat-card span {
+  color: #9ca3af;
+}
+
+.dark-theme .payroll-stat-card h2 {
+  color: #f9fafb;
+}
+
+.dark-theme .payroll-stat-card small {
+  color: #9ca3af;
+}
+
+.dark-theme .payroll-form-header h2,
+.dark-theme .payroll-table-header h2 {
+  color: #f9fafb;
+}
+
+.dark-theme .payroll-form-header button {
+  background: #374151;
+  color: #e5e7eb;
+}
+
+.dark-theme .payroll-field label {
+  color: #d1d5db;
+}
+
+.dark-theme .payroll-field input,
+.dark-theme .payroll-field select,
+.dark-theme .payroll-status-select {
+  background: #111827;
+  border-color: #4b5563;
+  color: #f9fafb;
+}
+
+.dark-theme .payroll-field input::placeholder {
+  color: #9ca3af;
+}
+
+.dark-theme .payroll-net-preview h3 {
+  color: #34d399;
+}
+
+.dark-theme .payroll-cancel-btn {
+  background: #374151;
+  color: #e5e7eb;
+}
+
+.dark-theme .payroll-table th {
+  background: #283548;
+  color: #cbd5e1;
+}
+
+.dark-theme .payroll-table td {
+  background: #1f2937;
+  border-bottom-color: #374151;
+  color: #cbd5e1;
+}
+
+.dark-theme .payroll-employee-id {
+  color: #9ca3af;
+}
+
+.dark-theme .payroll-status.paid {
+  background: #064e3b;
+  color: #6ee7b7;
+}
+
+.dark-theme .payroll-status.pending {
+  background: #78350f;
+  color: #fcd34d;
+}
+
+.dark-theme .payroll-edit-btn {
+  background: #373b63;
+  color: #a5b4fc;
+}
+
+.dark-theme .payroll-delete-btn {
+  background: #452b35;
+  color: #fca5a5;
+}
+
+.dark-theme .payroll-message {
+  color: #9ca3af;
+}
+
+.dark-theme .payroll-error {
+  background: #452b35;
+  color: #fca5a5;
+}

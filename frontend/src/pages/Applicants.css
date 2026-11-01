@@ -1,0 +1,635 @@
+.applicants-page {
+  width: 100%;
+  color: #1e293b;
+}
+
+.applicants-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.applicants-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 7px;
+}
+
+.applicants-header p {
+  color: #64748b;
+  margin: 0;
+  font-size: 14px;
+}
+
+.add-applicant-btn {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-applicant-btn:hover {
+  background: #4338ca;
+}
+
+.applicant-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.applicant-stat-card {
+  background: white;
+  border: 1px solid #e8edf4;
+  border-radius: 12px;
+  padding: 21px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.applicant-stat-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.applicant-stat-icon.blue {
+  background: #e8efff;
+  color: #4263eb;
+}
+
+.applicant-stat-icon.purple {
+  background: #f1eaff;
+  color: #8b5cf6;
+}
+
+.applicant-stat-icon.orange {
+  background: #fff1df;
+  color: #ea8b25;
+}
+
+.applicant-stat-icon.green {
+  background: #e4f8ed;
+  color: #16a36a;
+}
+
+.applicant-stat-card p {
+  color: #64748b;
+  font-size: 13px;
+  margin: 0 0 6px;
+}
+
+.applicant-stat-card h2 {
+  font-size: 25px;
+  margin: 0;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.applicants-table-card {
+  background: white;
+  border: 1px solid #e8edf4;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.applicants-toolbar {
+  padding: 22px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.applicants-toolbar h2 {
+  font-size: 17px;
+  margin: 0 0 5px;
+}
+
+.applicants-toolbar p {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0;
+}
+
+.applicants-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.applicant-search {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid #dce3ed;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #94a3b8;
+  width: 245px;
+}
+
+.applicant-search input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 13px;
+  color: #334155;
+}
+
+.applicant-refresh-btn {
+  width: 39px;
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dce3ed;
+  background: white;
+  color: #64748b;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.applicant-refresh-btn:hover {
+  background: #f8fafc;
+}
+
+.applicant-table-wrapper {
+  overflow-x: auto;
+}
+
+.applicant-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.applicant-table thead {
+  background: #f8fafc;
+}
+
+.applicant-table th {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 15px 22px;
+  white-space: nowrap;
+}
+
+.applicant-table td {
+  padding: 17px 22px;
+  border-top: 1px solid #edf1f6;
+  font-size: 13px;
+  color: #475569;
+  white-space: nowrap;
+}
+
+.applicant-person {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.applicant-avatar {
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  background: #e9eaff;
+  color: #4f46e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.applicant-person strong {
+  display: block;
+  color: #1e293b;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.applicant-person span {
+  display: block;
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.applicant-status {
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 7px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.status-applied {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.status-shortlisted {
+  background: #f3e8ff;
+  color: #9333ea;
+}
+
+.status-interview {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+.status-selected {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-rejected {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.applicant-row-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.applicant-row-actions button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e2e8f0;
+  border-radius: 7px;
+  background: white;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.applicant-row-actions button:hover {
+  background: #f1f5f9;
+  color: #4f46e5;
+}
+
+.applicant-row-actions button.delete:hover {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.applicant-message {
+  text-align: center;
+  padding: 55px 20px;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.applicant-error {
+  margin: 15px 22px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-size: 13px;
+}
+
+.applicant-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.applicant-modal {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.applicant-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 25px;
+  border-bottom: 1px solid #edf1f6;
+}
+
+.applicant-modal-header h2 {
+  margin: 0 0 5px;
+  font-size: 19px;
+}
+
+.applicant-modal-header p {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.applicant-modal-header button {
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.applicant-modal form {
+  padding: 25px;
+}
+
+.applicant-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 19px;
+}
+
+.applicant-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.applicant-form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.applicant-form-group label {
+  font-size: 13px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.applicant-form-group input {
+  padding: 11px 12px;
+  border: 1px solid #dce3ed;
+  border-radius: 8px;
+  outline: none;
+  font-size: 13px;
+}
+
+.applicant-form-group input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.applicant-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 27px;
+  padding-top: 20px;
+  border-top: 1px solid #edf1f6;
+}
+
+.applicant-cancel-btn,
+.applicant-save-btn {
+  padding: 11px 17px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.applicant-cancel-btn {
+  background: white;
+  border: 1px solid #dce3ed;
+  color: #475569;
+}
+
+.applicant-save-btn {
+  background: #4f46e5;
+  border: none;
+  color: white;
+}
+
+.applicant-save-btn:hover {
+  background: #4338ca;
+}
+
+.applicant-save-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1000px) {
+  .applicant-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .applicants-header,
+  .applicants-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .applicants-actions,
+  .applicant-search {
+    width: 100%;
+  }
+
+  .applicant-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .applicant-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .applicant-form-group.full-width {
+    grid-column: auto;
+  }
+}
+
+
+/* =====================================
+   APPLICANTS DARK MODE
+===================================== */
+
+.dark-theme .applicants-page {
+  color: #e5e7eb;
+}
+
+.dark-theme .applicants-header h1 {
+  color: #f9fafb;
+}
+
+.dark-theme .applicants-header p {
+  color: #9ca3af;
+}
+
+/* STATISTICS CARDS */
+
+.dark-theme .applicant-stat-card {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+.dark-theme .applicant-stat-card p {
+  color: #9ca3af;
+}
+
+.dark-theme .applicant-stat-card h2 {
+  color: #f9fafb;
+}
+
+/* APPLICANTS TABLE CARD */
+
+.dark-theme .applicants-table-card {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+.dark-theme .applicants-toolbar h2 {
+  color: #f9fafb;
+}
+
+.dark-theme .applicants-toolbar p {
+  color: #9ca3af;
+}
+
+/* SEARCH AND REFRESH */
+
+.dark-theme .applicant-search {
+  background: #111827;
+  border-color: #4b5563;
+  color: #9ca3af;
+}
+
+.dark-theme .applicant-search input {
+  background: transparent;
+  color: #f3f4f6;
+}
+
+.dark-theme .applicant-search input::placeholder {
+  color: #9ca3af;
+}
+
+.dark-theme .applicant-refresh-btn {
+  background: #374151;
+  border-color: #4b5563;
+  color: #e5e7eb;
+}
+
+.dark-theme .applicant-refresh-btn:hover {
+  background: #4b5563;
+}
+
+/* TABLE */
+
+.dark-theme .applicant-table thead {
+  background: #283548;
+}
+
+.dark-theme .applicant-table th {
+  color: #cbd5e1;
+}
+
+.dark-theme .applicant-table td {
+  color: #cbd5e1;
+  border-top-color: #374151;
+}
+
+.dark-theme .applicant-person strong {
+  color: #f9fafb;
+}
+
+.dark-theme .applicant-person span {
+  color: #9ca3af;
+}
+
+/* ROW ACTION BUTTONS */
+
+.dark-theme .applicant-row-actions button {
+  background: #374151;
+  border-color: #4b5563;
+  color: #d1d5db;
+}
+
+.dark-theme .applicant-row-actions button:hover {
+  background: #4b5563;
+  color: #a5b4fc;
+}
+
+/* STATUS SELECT */
+
+.dark-theme .applicant-status {
+  filter: brightness(0.85);
+}
+
+/* EMPTY AND ERROR MESSAGES */
+
+.dark-theme .applicant-message {
+  color: #9ca3af;
+}
+
+/* MODAL */
+
+.dark-theme .applicant-modal {
+  background: #1f2937;
+  color: #f9fafb;
+}
+
+.dark-theme .applicant-modal-header {
+  border-bottom-color: #374151;
+}
+
+.dark-theme .applicant-modal-header h2 {
+  color: #f9fafb;
+}
+
+.dark-theme .applicant-modal-header p {
+  color: #9ca3af;
+}
+
+.dark-theme .applicant-modal-header button {
+  color: #d1d5db;
+}
+
+.dark-theme .applicant-form-group label {
+  color: #e5e7eb;
+}
+
+.dark-theme .applicant-form-group input {
+  background: #111827;
+  border-color: #4b5563;
+  color: #f9fafb;
+}
+
+.dark-theme .applicant-form-group input::placeholder {
+  color: #9ca3af;
+}
+
+.dark-theme .applicant-modal-footer {
+  border-top-color: #374151;
+}
+
+.dark-theme .applicant-cancel-btn {
+  background: #374151;
+  border-color: #4b5563;
+  color: #f3f4f6;
+}
+

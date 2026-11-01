@@ -1,0 +1,452 @@
+.attendance-page {
+  padding: 28px;
+  color: #263247;
+}
+
+.attendance-header,
+.attendance-form-header,
+.attendance-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.attendance-header {
+  margin-bottom: 24px;
+}
+
+.attendance-header h1 {
+  margin: 0 0 7px;
+  font-size: 28px;
+}
+
+.attendance-header p,
+.attendance-table-header p {
+  margin: 0;
+  color: #7b8494;
+  font-size: 14px;
+}
+
+.attendance-add-btn,
+.attendance-save-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 18px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.attendance-date-filter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.attendance-date-filter label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #566174;
+}
+
+.attendance-date-filter input {
+  padding: 9px 12px;
+  border: 1px solid #dfe3eb;
+  border-radius: 7px;
+  outline: none;
+}
+
+.attendance-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.attendance-stat-card,
+.attendance-form-card,
+.attendance-table-card {
+  background: white;
+  border: 1px solid #e8ebf1;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 3px 12px rgba(30, 41, 59, 0.04);
+}
+
+.attendance-stat-card span {
+  color: #737d8e;
+  font-size: 14px;
+}
+
+.attendance-stat-card h2 {
+  margin: 12px 0 0;
+  font-size: 28px;
+}
+
+.attendance-form-card {
+  margin-bottom: 25px;
+}
+
+.attendance-form-header {
+  margin-bottom: 22px;
+}
+
+.attendance-form-header h2,
+.attendance-table-header h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.attendance-form-header button {
+  border: none;
+  background: #f1f3f8;
+  border-radius: 6px;
+  padding: 7px 11px;
+  cursor: pointer;
+}
+
+.attendance-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.attendance-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.attendance-field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #566174;
+}
+
+.attendance-field input,
+.attendance-field select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px;
+  border: 1px solid #dfe3eb;
+  border-radius: 7px;
+  outline: none;
+  background: white;
+}
+
+.attendance-field input:focus,
+.attendance-field select:focus {
+  border-color: #6366f1;
+}
+
+.attendance-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 23px;
+}
+
+.attendance-cancel-btn {
+  background: #f1f3f7;
+  color: #4b5563;
+  border: none;
+  border-radius: 7px;
+  padding: 11px 18px;
+  cursor: pointer;
+}
+
+.attendance-table-card {
+  margin-bottom: 25px;
+}
+
+.attendance-table-header {
+  margin-bottom: 20px;
+}
+
+.attendance-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1050px;
+  font-size: 13px;
+}
+
+.attendance-table th {
+  background: #f7f8fc;
+  color: #657084;
+  font-weight: 600;
+  text-align: left;
+  padding: 14px 12px;
+  white-space: nowrap;
+}
+
+.attendance-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #edf0f4;
+  white-space: nowrap;
+}
+
+.attendance-table td small {
+  display: block;
+  margin-top: 5px;
+  color: #8992a1;
+}
+
+.attendance-status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.attendance-status.present {
+  color: #16845b;
+  background: #e5f7ef;
+}
+
+.attendance-status.absent {
+  color: #dc2626;
+  background: #feecec;
+}
+
+.attendance-status.halfday {
+  color: #b7791f;
+  background: #fff4dc;
+}
+
+.attendance-status.leave {
+  color: #4338ca;
+  background: #eeedff;
+}
+
+.attendance-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.attendance-actions button,
+.attendance-status-select {
+  border: none;
+  border-radius: 6px;
+  padding: 7px 9px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.attendance-edit-btn {
+  color: #4338ca;
+  background: #eeedff;
+}
+
+.attendance-checkin-btn {
+  color: #16845b;
+  background: #e5f7ef;
+}
+
+.attendance-checkout-btn {
+  color: #2563eb;
+  background: #e8f0ff;
+}
+
+.attendance-delete-btn {
+  color: #dc2626;
+  background: #feecec;
+}
+
+.attendance-status-select {
+  border: 1px solid #e1e5ed;
+  background: white;
+}
+
+.attendance-message {
+  text-align: center;
+  padding: 35px;
+  color: #7b8494;
+}
+
+.attendance-error {
+  background: #feecec;
+  color: #b91c1c;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .attendance-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .attendance-page {
+    padding: 15px;
+  }
+
+  .attendance-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .attendance-stats,
+  .attendance-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .attendance-date-filter {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+/* =====================================
+   ATTENDANCE DARK MODE
+===================================== */
+
+.dark-theme .attendance-page {
+  color: #e5e7eb;
+}
+
+.dark-theme .attendance-header h1 {
+  color: #f9fafb;
+}
+
+.dark-theme .attendance-header p,
+.dark-theme .attendance-table-header p {
+  color: #9ca3af;
+}
+
+.dark-theme .attendance-date-filter label {
+  color: #d1d5db;
+}
+
+.dark-theme .attendance-date-filter input {
+  background: #111827;
+  border-color: #4b5563;
+  color: #f9fafb;
+}
+
+.dark-theme .attendance-stat-card,
+.dark-theme .attendance-form-card,
+.dark-theme .attendance-table-card {
+  background: #1f2937;
+  border-color: #374151;
+  box-shadow: none;
+}
+
+.dark-theme .attendance-stat-card span {
+  color: #9ca3af;
+}
+
+.dark-theme .attendance-stat-card h2 {
+  color: #f9fafb;
+}
+
+.dark-theme .attendance-form-header h2,
+.dark-theme .attendance-table-header h2 {
+  color: #f9fafb;
+}
+
+.dark-theme .attendance-form-header button {
+  background: #374151;
+  color: #e5e7eb;
+}
+
+.dark-theme .attendance-field label {
+  color: #d1d5db;
+}
+
+.dark-theme .attendance-field input,
+.dark-theme .attendance-field select,
+.dark-theme .attendance-status-select {
+  background: #111827;
+  border-color: #4b5563;
+  color: #f9fafb;
+}
+
+.dark-theme .attendance-field input::placeholder {
+  color: #9ca3af;
+}
+
+.dark-theme .attendance-cancel-btn {
+  background: #374151;
+  color: #e5e7eb;
+}
+
+.dark-theme .attendance-table th {
+  background: #283548;
+  color: #cbd5e1;
+}
+
+.dark-theme .attendance-table td {
+  background: #1f2937;
+  border-bottom-color: #374151;
+  color: #cbd5e1;
+}
+
+.dark-theme .attendance-table td small {
+  color: #9ca3af;
+}
+
+.dark-theme .attendance-status.present {
+  background: #064e3b;
+  color: #6ee7b7;
+}
+
+.dark-theme .attendance-status.absent {
+  background: #452b35;
+  color: #fca5a5;
+}
+
+.dark-theme .attendance-status.halfday {
+  background: #78350f;
+  color: #fcd34d;
+}
+
+.dark-theme .attendance-status.leave {
+  background: #373b63;
+  color: #a5b4fc;
+}
+
+.dark-theme .attendance-edit-btn {
+  background: #373b63;
+  color: #a5b4fc;
+}
+
+.dark-theme .attendance-checkin-btn {
+  background: #064e3b;
+  color: #6ee7b7;
+}
+
+.dark-theme .attendance-checkout-btn {
+  background: #1e3a5f;
+  color: #93c5fd;
+}
+
+.dark-theme .attendance-delete-btn {
+  background: #452b35;
+  color: #fca5a5;
+}
+
+.dark-theme .attendance-message {
+  color: #9ca3af;
+}
+
+.dark-theme .attendance-error {
+  background: #452b35;
+  color: #fca5a5;
+}
+
+/* Dark mode native date picker */
+.dark-theme .attendance-date-filter input {
+  color-scheme: dark;
+}
